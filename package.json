@@ -2,7 +2,9 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
+  "source": "public/index.html",
   "dependencies": {
+    "@parcel/transformer-css": "^2.5.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
@@ -13,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "parcel public/index.html --host localhost --port 1234 --hmr-port 1235",
+    "start": "parcel --hmr-port 1235",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

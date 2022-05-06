@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Firefox debug",
+            "type": "firefox",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:1234",
+            "webRoot": "${workspaceFolder}/src",
+            "breakOnLoad": true,
+            "sourceMapPathOverrides": {
+                "/__parcel_source_root/*": "${webRoot}/*"
+            }
+        },
+        {
+            "name": "Launch Edge debug",
+            "type": "msedge",
+            "request": "launch",
+            "reAttach": true,
+            "url": "http://localhost:1234",
+            "webRoot": "${workspaceFolder}/src",
+            "breakOnLoad": true,
+            "sourceMapPathOverrides": {
+                "/__parcel_source_root/*": "${webRoot}/*"
+            }
+        },
+    ]
+}

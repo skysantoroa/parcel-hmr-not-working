@@ -4,8 +4,6 @@ services:
 
   tic-tac-toe:
     container_name: tic-tac-toe
-    environment:
-      - CHOKIDAR_USEPOLLING=1
     image: tic-tac-toe:latest
     build:
       context: .

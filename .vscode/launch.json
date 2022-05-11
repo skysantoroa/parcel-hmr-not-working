@@ -6,23 +6,23 @@
             "request": "launch",
             "reAttach": true,
             "url": "http://localhost:1234",
-            "webRoot": "${workspaceFolder}/src",
-            "breakOnLoad": true,
-            "sourceMapPathOverrides": {
-                "/__parcel_source_root/*": "${webRoot}/*"
-            }
+            "webRoot": "${workspaceFolder}",
+            "pathMappings": [
+                {
+                    "url": "http://localhost:1234/__parcel_source_root/src",
+                    "path": "${workspaceFolder}/src"
+                }
+            ]
         },
         {
-            "name": "Launch Edge debug",
-            "type": "msedge",
+            "type": "pwa-chrome",
             "request": "launch",
-            "reAttach": true,
+            "name": "Launch Chrome against localhost",
             "url": "http://localhost:1234",
-            "webRoot": "${workspaceFolder}/src",
-            "breakOnLoad": true,
-            "sourceMapPathOverrides": {
-                "/__parcel_source_root/*": "${webRoot}/*"
+            "webRoot": "${workspaceFolder}",
+            "pathMapping": {
+                "/__parcel_source_root/src": "${workspaceFolder}/src"
             }
-        },
+        }
     ]
 }

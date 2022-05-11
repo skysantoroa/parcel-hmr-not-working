@@ -4,12 +4,10 @@
             "name": "Launch Firefox debug",
             "type": "firefox",
             "request": "launch",
-            "reAttach": true,
-            "url": "http://localhost:1234",
-            "webRoot": "${workspaceFolder}",
+            "url": "http://localhost:1234/",
             "pathMappings": [
                 {
-                    "url": "http://localhost:1234/__parcel_source_root/src",
+                    "url": "file:///__parcel_source_root/src",
                     "path": "${workspaceFolder}/src"
                 }
             ]

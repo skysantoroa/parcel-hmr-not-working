@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '/src/index.css';
+import './index.css';
 
 const Square = (props: {value: number, onClick: () => void}) => {
 

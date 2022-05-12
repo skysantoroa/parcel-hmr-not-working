@@ -4,7 +4,7 @@
             "name": "Launch Firefox debug",
             "type": "firefox",
             "request": "launch",
-            "url": "http://localhost:1234/",
+            "url": "http://localhost:1234",
             "pathMappings": [
                 {
                     "url": "file:///__parcel_source_root/src",
